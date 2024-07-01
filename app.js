@@ -12,7 +12,7 @@ import userRoute from "./routes/user.route.js";
 dotenv.config();
 const app = express();
 // Set up of the cors
-app.use(cors({origin:"https://pmrealestate-priyanshu-mandlois-projects.vercel.app/",credentials:true}));
+app.use(cors({origin:"https://pmrealestate-priyanshu-mandlois-projects.vercel.app",credentials:true}));
 app.use(express.json());
 app.use(cookieParser());
 app.get("/", (req, res) => {
